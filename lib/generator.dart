@@ -15,8 +15,8 @@ class _MyGeneratorState extends State<Generator> {
   TextEditingController resController = TextEditingController();
 
   @override
-  Expanded build(BuildContext context) {
-    return Expanded(
+  Flexible build(BuildContext context) {
+    return Flexible(
       child: Column(
         children: <Widget>[
           Form(
