@@ -12,7 +12,7 @@ body {
     justify-items: center;
     align-items: center;
     align-content: center;
-    background-color: lightskyblue;
+    background-color: #484848;
 }
 
 #loader-title {
@@ -21,7 +21,7 @@ body {
 
     font-weight: 500;
     font-size: 22;
-    color: white;
+    color: lightskyblue;
 }
 
 .lds-grid {
@@ -36,7 +36,7 @@ body {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #fff;
+    background: lightskyblue;
     animation: lds-grid 1.2s linear infinite;
 }
 
