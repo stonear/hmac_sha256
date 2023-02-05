@@ -30,7 +30,7 @@ jobs:
       #   run: flutter test
 
       - name: Build release project
-        run: flutter build web --base-href "/hmac_sha256/"
+        run: flutter build web --base-href "/hmac_sha256/" --web-renderer html
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
