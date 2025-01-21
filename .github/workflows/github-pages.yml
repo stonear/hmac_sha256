@@ -20,17 +20,20 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.16.4"
+          flutter-version: "3.27.2"
           channel: "stable"
 
       - name: Get dependencies
         run: flutter pub get
 
+      - name: Run build_runner
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
       # - name: Test project
       #   run: flutter test
 
       - name: Build release project
-        run: flutter build web --base-href "/hmac_sha256/" --web-renderer html
+        run: flutter build web --base-href "/hmac_sha256/"
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
