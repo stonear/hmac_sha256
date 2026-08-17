@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'HMAC SHA256 Calculator',
       theme: CupertinoThemeData(
         brightness: Brightness.dark,
-        primaryColor: CupertinoColors.systemGreen,
+        primaryColor: Color(0xFF42E2CE),
+        scaffoldBackgroundColor: Color(0xFF080B12),
       ),
       home: HomeScreen(),
     );
