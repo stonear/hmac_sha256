@@ -29,9 +29,7 @@ class HomeScreen extends ConsumerWidget {
       ),
       tabBuilder: (context, index) {
         return CupertinoPageScaffold(
-          navigationBar: CupertinoNavigationBar(
-            middle: Text(_titles[index]!),
-          ),
+          navigationBar: CupertinoNavigationBar(middle: Text(_titles[index]!)),
           child: SafeArea(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(16.0),
@@ -64,10 +62,7 @@ class _GeneratorSectionState extends ConsumerState<_GeneratorSection> {
       children: [
         const Text(
           'Generator',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         CupertinoTextField(
@@ -90,10 +85,7 @@ class _GeneratorSectionState extends ConsumerState<_GeneratorSection> {
         const SizedBox(height: 24),
         const Text(
           'HMAC-SHA256 Result:',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 8),
         Container(
@@ -104,10 +96,7 @@ class _GeneratorSectionState extends ConsumerState<_GeneratorSection> {
           ),
           child: SelectableText(
             result,
-            style: const TextStyle(
-              fontSize: 16,
-              fontFamily: 'monospace',
-            ),
+            style: const TextStyle(fontSize: 16, fontFamily: 'monospace'),
           ),
         ),
       ],
@@ -136,10 +125,7 @@ class _ValidatorSectionState extends ConsumerState<_ValidatorSection> {
       children: [
         const Text(
           'Validator',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         CupertinoTextField(
@@ -173,10 +159,7 @@ class _ValidatorSectionState extends ConsumerState<_ValidatorSection> {
           children: [
             const Text(
               'Valid: ',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             Icon(
               isValid
